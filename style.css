@@ -1,0 +1,168 @@
+html, body 
+{
+    font-size: 1.125rem;
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: inherit;
+    padding: 2px;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) 
+{
+    nav ul
+    {
+        display: none;
+    }
+
+    h1
+    {
+        flex-grow: 1;
+    }
+
+    main
+    {
+        padding: 0;
+    }
+
+    #about 
+    {
+        padding: 0;
+        margin: 0;
+        width: 100%; 
+    }
+
+    .flex-col 
+    {
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;
+    }
+
+    .text-justify 
+    {
+        padding: 0;
+        margin: 0;
+        text-align: justify;
+        hyphens: auto;
+    }
+
+    .rounded-full 
+    {
+        border-radius: 50%; 
+    }
+
+    img 
+    {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .mx-auto 
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mx-2 
+    {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+nav
+{
+    justify-content: flex-end;
+}
+
+body 
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Mono', sans-serif;
+    padding-left: 0;
+    padding-right: 0; 
+    margin: 0;
+    overflow-x: hidden;
+}
+
+main 
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 100px;
+    padding-left: 0;
+    padding-right: 0; 
+}
+
+footer 
+{
+    border-top: 1px solid;
+}
+
+#about 
+{
+    scroll-margin-top: 4rem;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 2.2rem;
+}
+
+#skills
+{
+    scroll-margin-top: 9rem;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+#education
+{
+    scroll-margin-top: 10rem;
+    margin: 0 auto;
+}
+
+.usp-logo
+{
+    width: 200px;
+    display: none;
+}
+
+.light-mode
+{
+    display: block;
+}
+
+.dark-mode 
+{
+    display: none; 
+}
+
+.dark .dark-mode 
+{
+    display: block; 
+}
+
+.dark .light-mode 
+{
+    display: none;
+}
+
+#contact
+{
+    scroll-margin-top: 5rem;
+}

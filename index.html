@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon/favicon.png" type="image/png">
+    <title>Nicolas Winck's portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-black dark:bg-gray-900 dark:text-gray-100">
+    <header class="text-xl mb-2 bg-gray-50 text-blue-800 dark:bg-gray-900 dark:text-gray-100 border-b border-gray-300 dark:border-gray-700">
+        <div class="flex items-center justify-between px-4">
+            <h1 class="text-lg flex-grow"><i class="fa-solid fa-code"></i> Nicolas Winck</h1>
+            <nav class="flex items-center space-x-4">
+                <ul class="hidden md:flex space-x-4">
+                    <li><a href="#about" class="hover:bg-gray-200 dark:hover:bg-gray-800 border border-transparent rounded-md p-2 text-sm sm:text-base">about</a></li>
+                    <li><a href="#skills" class="hover:bg-gray-200 dark:hover:bg-gray-800 border border-transparent rounded-md p-2 text-sm sm:text-base">skills</a></li>
+                    <li><a href="#education" class="hover:bg-gray-200 dark:hover:bg-gray-800 border border-transparent rounded-md p-2 text-sm sm:text-base">education</a></li>
+                    <li><a href="#contact" class="hover:bg-gray-200 dark:hover:bg-gray-800 border border-transparent rounded-md p-2 text-sm sm:text-base">contact</a></li>
+                </ul>
+                <button id="theme-toggle-icon" onclick="toggleDarkMode()" 
+                class="bg-gray-50 text-blue-800 hover:bg-gray-200 border border-transparent rounded-md dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-gray-800 p-2 duration-100">
+                </button>
+            </nav>
+        </div>
+    </header>
+            
+    <main class="flex-grow bg-white dark:bg-gray-950 dark:text-gray-200">
+        <!-- About -->
+        <section id="about" class="p-4 sm:p-6 bg-white dark:bg-gray-950 dark:text-gray-200 max-w-3xl mx-auto text-left">
+            <div style="text-align: center;">
+                <h2 class="text-2xl"><b>Hey there! I'm Nicolas,</b></h2><br><br>
+            </div>
+            <div class="flex flex-col items-center md:flex-row md:space-x-10">
+                <!-- Picture. -->
+                <div class="flex-shrink-0 mb-4">
+                    <img src="images/your_profile_pic" alt="Profile picture" class="h-60 w-60 md:h-80 md:w-80 rounded-full object-cover mb-4">
+                    <p class="flex justify-center space-x-4">
+                        <a href="https://github.com/yourusername" target="_blank">
+                            <i class="devicon-github-original" style="font-size: 2rem;"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yourusername" target="_blank">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn icon" class="h-8 w-8">
+                        </a>
+                    </p>
+                </div>
+                
+                <!-- Text. -->
+                <p class="text-justify text-sm md:text-base break-words">
+                    a software developer currently pursuing a master's degree in natural language processing (NLP).
+                    My passion for tech began in the late '90s with computer games and continued into the early '00s, 
+                    when I started building websites to entertain my friends. By studying coding, I've improved my 
+                    understanding of systems, patterns, logic, and, of course, computers. <br><br>
+        
+                    I've worked on academic projects both back-end and front-end technologies. In back-end projects,
+                    the skills involved not only writing code but also applying problem-solving routines, testing 
+                    software, designing user interfaces, and managing databases. On the other hand, I explored the web 
+                    by building websites, creating servers, and deploying and managing cloud infrastructure including
+                    virtual machines, virtual networks, and secure application environments. <br><br>
+        
+                    Moreover, I have 12 years of experience in linguistics and education, two fields that connected 
+                    me to languages, people, and, most importantly, to learning, which is my greatest personal commitment.
+                    I'm always refactoring.
+                </p>
+            </div>
+        </section>
+
+        <br><br><br><br><br><br><br><br><br>
+
+        <!-- Skills -->
+        <section id="skills" class="bg-white dark:bg-gray-950 dark:text-gray-200 px-6 sm:px-6 lg:px-0">
+            <div style="text-align: center;">
+                <h2 class="text-2xl"><b>technologies</b></h2><br><br>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Languages section -->
+                <div class="flex flex-col items-center p-6 border rounded-lg shadow-lg w-full transform hover:scale-105 transition duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold">languages</h3>
+                    <div class="grid grid-cols-4 gap-4 mt-8">
+                        <div class="flex flex-col items-center">
+                            <img src="https://icongr.am/devicon/c-original.svg?size=50&color=currentColor" alt="C Icon" class="w-12 h-12">
+                            <span class="text-xs mt-2">C</span>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <img src="https://icongr.am/devicon/cplusplus-original.svg?size=50&color=currentColor" alt="C++ Icon" class="w-12 h-12 mx-auto">
+                            <span class="text-xs mt-2">C++</span>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <img src="https://icongr.am/devicon/python-original.svg?size=50&color=currentColor" alt="Python Icon" class="w-12 h-12 mx-auto">
+                            <span class="text-xs mt-2">Python</span>
+                        </div>
+                    
+                        <div class="flex flex-col items-center">
+                            <img src="https://icongr.am/devicon/javascript-original.svg?size=50&color=currentColor" alt="JavaScript Icon" class="w-12 h-12 mx-auto">
+                            <span class="text-xs mt-2">JavaScript</span> 
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Web section -->
+                <div class="flex flex-col items-center p-6 border rounded-lg shadow-lg w-full transform hover:scale-105 transition duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold">web</h3>
+                    <div class="grid grid-cols-3 gap-4 mt-8">
+                        <div class="flex flex-col items-center">
+                            <img src="https://icongr.am/devicon/html5-original.svg?size=50&color=currentColor" alt="HTML5 Icon" class="w-12 h-12 mx-auto">
+                            <span class="text-xs mt-2">HTML5</span>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <img src="https://icongr.am/devicon/css3-original.svg?size=50&color=currentColor" alt="CSS3 Icon" class="w-12 h-12 mx-auto">
+                            <span class="text-xs mt-2">CSS3</span>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwing Icon" class="w-12 h-12 mx-auto">
+                            <span class="text-xs mt-2">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database section -->
+                <div class="flex flex-col items-center p-6 border rounded-lg shadow-lg w-full transform hover:scale-105 transition duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold">database</h3>
+                    <div class="grid grid-cols-3 gap-4 mt-8">
+                        <div class="flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" alt="SQL Developer Icon" class="w-12 h-12 mx-auto">
+                            <span class="text-xs mt-2">SQL Developer</span>
+                        </div>
+                
+                        <div class="flex flex-col items-center">
+                            <img src="https://icongr.am/devicon/postgresql-original.svg?size=50&color=currentColor" alt="PostgreSQL Icon" class="w-12 h-12 mx-auto">
+                            <span class="text-xs mt-2">PostgreSQL</span>
+                        </div>
+                        
+                        <div class="flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB Icon" class="w-12 h-12 mx-auto">
+                            <span class="text-xs mt-2">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data analysis section -->
+                <div class="flex flex-col items-center p-6 border rounded-lg shadow-lg w-full transform hover:scale-105 transition duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold">data analysis/ML</h3>
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-white dark:bg-gray-400 p-2 rounded-md inline-block">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="Pandas Icon" class="w-12 h-12 mx-auto">
+                            </div>
+                            <span class="text-xs mt-2">Pandas</span>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <div class="bg-white dark:bg-gray-400 p-2 rounded-sm inline-block">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="scikitlearn Icon" class="w-12 h-12 mx-auto">
+                            </div>
+                            <span class="text-xs mt-2">scikit-learn</span>
+                        </div>          
+                    </div>
+                </div>
+
+                <!-- Scripting section -->
+                <div class="flex flex-col items-center p-6 border rounded-lg shadow-lg w-full transform hover:scale-105 transition duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold">scripting</h3>
+                    <div class="flex flex-col items-center">
+                        <div class="grid grid-cols-1 gap-4 mt-8">
+                            <div class="bg-white dark:bg-gray-400 p-2 rounded-sm inline-block">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" alt="Bash Icon" class="w-12 h-12 mx-auto">
+                            </div>      
+                        </div>
+                        <span class="text-xs mt-2">Bash</span>
+                    </div>
+                </div>
+
+                <!-- Cloud section -->
+                <div class="flex flex-col items-center p-6 border rounded-lg shadow-lg w-full transform hover:scale-105 transition duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold">cloud</h3>
+                    <div class="flex flex-col items-center">
+                        <div class="grid grid-cols-1 gap-4 mt-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure Icon" class="w-12 h-12 mx-auto">            
+                        </div>
+                    </div>
+                    <span class="text-xs mt-2">Azure</span>
+                </div>
+            </div>
+        </section>
+
+        <br><br><br><br><br><br><br><br><br><br>
+
+        <!-- Education -->
+        <section id="education" class="bg-white dark:bg-gray-950 dark:text-gray-200 px-6 sm:px-6 lg:px-0">
+            <div style="text-align: center;">
+                <h2 class="text-2xl"><b>my academic background</b></h2><br><br>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-full">
+
+                <div class="flex flex-col p-6 border rounded-lg shadow-lg w-full transform hover:scale-105 transition duration-300 ease-in-out">
+                    <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460.6 173.1" style="width: 200px; height: 150px"><defs><style>.e{fill:#da291c;}</style></defs><g id="b">
+                        <path class="e" d="m.27,125.03h17.69c10.67,0,17.69,5.67,17.69,14.99v.14c0,10.19-8.51,15.46-18.56,15.46H5.6v16.67H.27v-47.25Zm17.01,25.72c7.83,0,12.96-4.19,12.96-10.4v-.13c0-6.75-5.06-10.26-12.69-10.26H5.6v20.79h11.68Z"/><path class="e" d="m40.56,148.8v-.14c0-13.03,9.79-24.44,24.17-24.44s24.03,11.27,24.03,24.3v.13c0,13.03-9.79,24.44-24.17,24.44s-24.03-11.27-24.03-24.3Zm42.66,0v-.14c0-10.73-7.83-19.51-18.63-19.51s-18.5,8.64-18.5,19.37v.13c0,10.73,7.83,19.51,18.63,19.51s18.5-8.64,18.5-19.37Z"/><path class="e" d="m97.33,125.03h5.33v42.33h26.6v4.93h-31.93v-47.25Z"/><path class="e" d="m142.42,153.59l-19.64-28.55h6.48l15.93,23.63,16.07-23.63h6.21l-19.64,28.49v18.77h-5.4v-18.7Z"/><path class="e" d="m185.75,129.96h-15.86v-4.93h37.13v4.93h-15.86v42.33h-5.4v-42.33Z"/><path class="e" d="m214.3,125.03h34.16v4.86h-28.83v16.13h25.79v4.86h-25.79v16.54h29.16v4.86h-34.5v-47.25Z"/><path class="e" d="m254.73,148.8v-.14c0-13.37,9.99-24.44,23.9-24.44,8.57,0,13.7,3.04,18.43,7.49l-3.65,3.92c-3.98-3.78-8.44-6.48-14.85-6.48-10.46,0-18.29,8.51-18.29,19.37v.13c0,10.94,7.9,19.51,18.29,19.51,6.48,0,10.73-2.5,15.26-6.82l3.51,3.44c-4.93,5-10.33,8.3-18.9,8.3-13.64,0-23.69-10.73-23.69-24.3Z"/><path class="e" d="m303.94,125.03h5.33v20.99h27.27v-20.99h5.33v47.25h-5.33v-21.26h-27.27v21.26h-5.33v-47.25Z"/><path class="e" d="m352.54,125.03h5l29.77,37.87v-37.87h5.2v47.25h-4.25l-30.51-38.75v38.75h-5.2v-47.25Z"/><path class="e" d="m403.63,125.03h5.33v47.25h-5.33v-47.25Z"/><path class="e" d="m418.01,148.8v-.14c0-13.37,9.99-24.44,23.9-24.44,8.57,0,13.7,3.04,18.43,7.49l-3.65,3.92c-3.98-3.78-8.44-6.48-14.85-6.48-10.46,0-18.29,8.51-18.29,19.37v.13c0,10.94,7.9,19.51,18.29,19.51,6.48,0,10.73-2.5,15.26-6.82l3.51,3.44c-4.93,5-10.33,8.3-18.9,8.3-13.64,0-23.69-10.73-23.69-24.3Z"/></g><g id="c"><path class="e" d="m30.85,85.71c9.14,0,14.71-4.71,14.71-10.72,0-9.14-10-11.71-23.56-18.71C8.57,49.42,1.57,39.57,1.57,28.14,1.57,11.72,14.84,0,37.13,0c8.28,0,16,1.57,24.28,4.57v16.28c-8.14-4.14-14.72-6.56-20.14-6.56-7.72,0-12.71,4.28-12.71,9.43,0,8,10.29,10.86,26.99,20,11.14,6.14,16.29,14.57,16.29,26.28,0,18.14-15,30.72-38.13,30.72-9.57,0-18.87-1.86-28.72-5.15L0,74.99c11.28,6.86,20.84,10.72,30.85,10.72"/><path class="e" d="m104.37,64.42c0,.87-.14,1.75-.14,2.48,0,12.52,8.16,19.82,21.42,19.82,6.56,0,14.44-2.76,24.34-7.43l-5.24,16.9c-8.6,2.92-16.76,4.96-25.95,4.96-26.09,0-41.39-14.72-41.39-36.59s16.04-37.32,37.9-37.32c19.39,0,33.81,13.7,33.81,35.28v1.89h-44.75Zm10.21-23.62c-5.69,0-9.33,3.79-9.63,10.79h18.66c0-7.14-3.21-10.79-9.03-10.79"/><path class="e" d="m158.17,86.13v-43.14c0-5.69-1.17-9.62-4.96-13.12h6.71c7.58,0,15.3-.28,23.32-1.6l.58,7.15c5.83-4.67,11.37-7,17.93-7,15.31,0,25.22,9.77,25.22,25.66v32.07c0,5.68,1.17,9.47,4.96,12.97h-35.56c3.79-3.5,4.95-7.29,4.95-12.97v-22.3c0-13.56-1.75-20.7-9.19-20.7s-8.31,7.14-8.31,20.7v22.3c0,5.68,1.17,9.47,4.95,12.97h-35.56c3.79-3.5,4.96-7.29,4.96-12.97"/><path class="e" d="m261.86,64.42c0,.87-.14,1.75-.14,2.48,0,12.52,8.16,19.82,21.42,19.82,6.56,0,14.44-2.76,24.34-7.43l-5.24,16.9c-8.61,2.92-16.77,4.96-25.95,4.96-26.09,0-41.39-14.72-41.39-36.59s16.04-37.32,37.9-37.32c19.39,0,33.81,13.7,33.81,35.28v1.89h-44.75Zm10.21-23.62c-5.69,0-9.33,3.79-9.63,10.79h18.66c0-7.14-3.2-10.79-9.03-10.79"/><path class="e" d="m376.84,96.34c-7.58,3.35-15.02,4.81-22.89,4.81-24.35,0-39.8-15.45-39.8-36,0-21.72,16.47-37.75,42.28-37.75,4.08,0,9.47.58,16.33,1.6v17.35c-5.84-3.06-10.49-4.67-14.28-4.67-9.62,0-15.89,7.29-15.89,19.98,0,15.01,7.44,24.19,19.68,24.19,5.83,0,12.24-2.04,19.82-6.13l-5.24,16.62Z"/><path class="e" d="m409.44,78.55c0,5.11,3.64,8.61,10.06,8.61h1.16l-6.12,12.97c-4.09.29-6.86.44-8.61.44-14.43,0-24.19-9.33-24.19-21.72,0-10.78,6.85-17.63,20.26-20.84,12.82-3.06,21.14-2.77,21.14-9.76,0-4.38-3.06-6.71-9.19-6.71s-11.95,1.45-18.51,4.08l6.84-15.6c5.55-1.6,10.79-2.62,16.33-2.62,11.37,0,19.53,2.33,24.78,7.73,6.12,6.27,6.27,14.14,6.27,24.19v17.49c0,7.58,2.62,9.77,10.93,10.94l-5.53,12.24c-3.79.29-6.41.44-8.16.44-13.99,0-23.91-8.61-23.91-21.58v-12.24c-9.04,3.49-13.56,6.12-13.56,11.95"/>
+                        </g>
+                    </svg>
+                    <h2>computer programming <br> 2023-2024</h2>
+                </div>
+
+                <div class="flex flex-col p-6 border rounded-lg shadow-lg w-full transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="images/usp_logo.png" style="width: 200px;" alt="USP Logo" class="usp-logo light-mode">
+                    <img src="images/usp_logo_dark.png" style="width: 200px;" alt="USP Logo" class="usp-logo dark-mode">
+                    <h2>linguistics / natural language processing (NLP) <br> 2008-2013 <br> 2022-2024</h2> 
+                </div>
+
+                <a href="other_files/your_resume" download="resume.pdf">
+                    <button id="resume" class="bg-gray-50 text-blue-800 hover:bg-gray-200 border border-gray-300 rounded-md
+                    dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-gray-800 p-2 w-full sm:w-1/3">resume <i class="fa-solid fa-download"></i>
+                    </button>
+                </a>   
+            </div>
+        </section>
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+
+        <!-- Contact -->
+        <section id="contact" class="p-6 bg-white dark:bg-gray-950 dark:text-white">
+            <div style="text-align: center;">
+                <h2 class="text-2xl"><b>reach out anytime!</b></h2><br><br>
+            </div>
+            <div class="max-w-lg mx-auto p-6 bg-gray-50 dark:bg-gray-900 rounded-md shadow-md">
+                <h2 class="text-xl mb-4 text-gray-800 dark:text-gray-100"></h2>
+                
+                <form action="[your form service code]" method="POST" class="space-y-4">
+                    <!-- Inserting name. -->
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-200">name</label>
+                        <input type="text" id="name" name="name" required
+                            class="mt-1 block w-full p-2 bg-white dark:bg-gray-700 text-gray-800 dark:text-black border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400" />
+                    </div>
+            
+                    <!-- Inserting email. -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-200">email</label>
+                        <input type="email" id="email" name="email" required
+                            class="mt-1 block w-full p-2 bg-white dark:bg-gray-700 text-gray-800 dark:text-black border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400" />
+                    </div>
+            
+                    <!-- Inserting message. -->
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-200">message</label>
+                        <textarea id="message" name="message" rows="4" required
+                            class="mt-1 block w-full p-2 bg-white dark:bg-gray-700 text-gray-800 dark:text-black border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400"></textarea>
+                    </div>
+            
+                    <button type="submit"
+                        class="w-full bg-gray-50 text-blue-800 hover:bg-gray-200 border border-gray-300 dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-gray-800 py-2 rounded-md transition duration-200">
+                        <i class="text-2xl fa-regular fa-envelope"></i>
+                    </button>
+                </form>
+            </div>
+            <br><br>
+        </section>
+    </main>
+
+    <footer class="p-6 text-center bg-gray-50 text-blue-800 dark:bg-gray-900 dark:text-gray-100 border-t border-gray-300 dark:border-gray-700">
+        <p style="font-size: 12px;"> Copyright &copy; 2024 Nicolas Winck</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

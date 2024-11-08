@@ -1,6 +1,6 @@
 # personal-website
  
-This repository contains the source code for my personal portfolio website, with core information such as my resume, projects, and professional background. It includes an interactive way for visitors to view my work, download my resume, know me a little better, and contact me directly.
+This repository contains the source code for my personal portfolio website, with core information such as my resume, projects, and professional background. It includes an interactive way for visitors to view my work, download my resume, get to know me a little better, and contact me directly.
 
 ## Features
 
